@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DCF418422B244AA00FD6FBE /* Cycript.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCF418322B244AA00FD6FBE /* Cycript.h */; };
+		1DCF418722B24BE900FD6FBE /* NSData+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCF418522B24BE900FD6FBE /* NSData+HexString.h */; };
+		1DCF418822B24BE900FD6FBE /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF418622B24BE900FD6FBE /* NSData+HexString.m */; };
+		1DDA47EE22B2426000472EA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDA47ED22B2426000472EA0 /* UIKit.framework */; };
+		1DDA47F022B2426000472EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDA47EF22B2426000472EA0 /* Foundation.framework */; };
+		1DDA47F222B2426000472EA0 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDA47F122B2426000472EA0 /* CydiaSubstrate.framework */; };
+		1DDA47FB22B2426000472EA0 /* MyCycriptServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA47FA22B2426000472EA0 /* MyCycriptServer.mm */; };
+		1DDA480722B2427C00472EA0 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA480522B2427C00472EA0 /* MDCycriptManager.m */; };
+		1DDA480822B2427C00472EA0 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDA480622B2427C00472EA0 /* MDCycriptManager.h */; };
+		1DDA480B22B242A900472EA0 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDA480922B242A900472EA0 /* MDConfigManager.h */; };
+		1DDA480C22B242A900472EA0 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA480A22B242A900472EA0 /* MDConfigManager.m */; };
+		1DDA480E22B242D500472EA0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDA480D22B242D500472EA0 /* JavaScriptCore.framework */; };
+		1DDA481222B243C000472EA0 /* libcycript.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDA481122B243C000472EA0 /* libcycript.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DCF418322B244AA00FD6FBE /* Cycript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cycript.h; sourceTree = "<group>"; };
+		1DCF418522B24BE900FD6FBE /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexString.h"; sourceTree = "<group>"; };
+		1DCF418622B24BE900FD6FBE /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexString.m"; sourceTree = "<group>"; };
+		1DDA47EA22B2426000472EA0 /* MyCycriptServer.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MyCycriptServer.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DDA47ED22B2426000472EA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DDA47EF22B2426000472EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DDA47F122B2426000472EA0 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		1DDA47F622B2426000472EA0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		1DDA47F822B2426000472EA0 /* MyCycriptServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCycriptServer-Prefix.pch"; sourceTree = "<group>"; };
+		1DDA47F922B2426000472EA0 /* MyCycriptServer.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyCycriptServer.xm; sourceTree = "<group>"; };
+		1DDA47FA22B2426000472EA0 /* MyCycriptServer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCycriptServer.mm; sourceTree = "<group>"; };
+		1DDA47FF22B2426000472EA0 /* MyCycriptServer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MyCycriptServer.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MyCycriptServer.plist; sourceTree = "<group>"; };
+		1DDA480522B2427C00472EA0 /* MDCycriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		1DDA480622B2427C00472EA0 /* MDCycriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		1DDA480922B242A900472EA0 /* MDConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		1DDA480A22B242A900472EA0 /* MDConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		1DDA480D22B242D500472EA0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1DDA481122B243C000472EA0 /* libcycript.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcycript.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DDA47E622B2426000472EA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDA480E22B242D500472EA0 /* JavaScriptCore.framework in Frameworks */,
+				1DDA481222B243C000472EA0 /* libcycript.dylib in Frameworks */,
+				1DDA47EE22B2426000472EA0 /* UIKit.framework in Frameworks */,
+				1DDA47F022B2426000472EA0 /* Foundation.framework in Frameworks */,
+				1DDA47F222B2426000472EA0 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DDA47DF22B2426000472EA0 = {
+			isa = PBXGroup;
+			children = (
+				1DDA47F322B2426000472EA0 /* MyCycriptServer */,
+				1DDA47EC22B2426000472EA0 /* Frameworks */,
+				1DDA47EB22B2426000472EA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DDA47EB22B2426000472EA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47EA22B2426000472EA0 /* MyCycriptServer.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DDA47EC22B2426000472EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA480D22B242D500472EA0 /* JavaScriptCore.framework */,
+				1DDA47ED22B2426000472EA0 /* UIKit.framework */,
+				1DDA47EF22B2426000472EA0 /* Foundation.framework */,
+				1DDA47F122B2426000472EA0 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DDA47F322B2426000472EA0 /* MyCycriptServer */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47F922B2426000472EA0 /* MyCycriptServer.xm */,
+				1DDA47FA22B2426000472EA0 /* MyCycriptServer.mm */,
+				1DDA480922B242A900472EA0 /* MDConfigManager.h */,
+				1DDA480A22B242A900472EA0 /* MDConfigManager.m */,
+				1DDA480622B2427C00472EA0 /* MDCycriptManager.h */,
+				1DDA480522B2427C00472EA0 /* MDCycriptManager.m */,
+				1DCF418522B24BE900FD6FBE /* NSData+HexString.h */,
+				1DCF418622B24BE900FD6FBE /* NSData+HexString.m */,
+				1DCF418322B244AA00FD6FBE /* Cycript.h */,
+				1DDA481122B243C000472EA0 /* libcycript.dylib */,
+				1DDA47F422B2426000472EA0 /* Package */,
+				1DDA47F722B2426000472EA0 /* Supporting Files */,
+			);
+			path = MyCycriptServer;
+			sourceTree = "<group>";
+		};
+		1DDA47F422B2426000472EA0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47F522B2426000472EA0 /* DEBIAN */,
+				1DDA47FC22B2426000472EA0 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		1DDA47F522B2426000472EA0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47F622B2426000472EA0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		1DDA47F722B2426000472EA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47F822B2426000472EA0 /* MyCycriptServer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DDA47FC22B2426000472EA0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47FD22B2426000472EA0 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		1DDA47FD22B2426000472EA0 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47FE22B2426000472EA0 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		1DDA47FE22B2426000472EA0 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA47FF22B2426000472EA0 /* MyCycriptServer.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DDA47E722B2426000472EA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDA480822B2427C00472EA0 /* MDCycriptManager.h in Headers */,
+				1DCF418422B244AA00FD6FBE /* Cycript.h in Headers */,
+				1DCF418722B24BE900FD6FBE /* NSData+HexString.h in Headers */,
+				1DDA480B22B242A900472EA0 /* MDConfigManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1DDA47E922B2426000472EA0 /* MyCycriptServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DDA480222B2426000472EA0 /* Build configuration list for PBXNativeTarget "MyCycriptServer" */;
+			buildPhases = (
+				1DDA47E422B2426000472EA0 /* ShellScript */,
+				1DDA47E522B2426000472EA0 /* Sources */,
+				1DDA47E622B2426000472EA0 /* Frameworks */,
+				1DDA47E722B2426000472EA0 /* Headers */,
+				1DDA47E822B2426000472EA0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCycriptServer;
+			productName = MyCycriptServer;
+			productReference = 1DDA47EA22B2426000472EA0 /* MyCycriptServer.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DDA47E022B2426000472EA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					1DDA47E922B2426000472EA0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1DDA47E322B2426000472EA0 /* Build configuration list for PBXProject "MyCycriptServer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1DDA47DF22B2426000472EA0;
+			productRefGroup = 1DDA47EB22B2426000472EA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DDA47E922B2426000472EA0 /* MyCycriptServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDA47E422B2426000472EA0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		1DDA47E822B2426000472EA0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DDA47E522B2426000472EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDA480C22B242A900472EA0 /* MDConfigManager.m in Sources */,
+				1DDA47FB22B2426000472EA0 /* MyCycriptServer.mm in Sources */,
+				1DDA480722B2427C00472EA0 /* MDCycriptManager.m in Sources */,
+				1DCF418822B24BE900FD6FBE /* NSData+HexString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DDA480022B2426000472EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"MyCycriptServer\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DDA480122B2426000472EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"MyCycriptServer\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1DDA480322B2426000472EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DG264Y8UZ6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCycriptServer",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCycriptServer/MyCycriptServer-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCycriptServer",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = lh;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DDA480422B2426000472EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DG264Y8UZ6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCycriptServer",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCycriptServer/MyCycriptServer-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCycriptServer",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = lh;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DDA47E322B2426000472EA0 /* Build configuration list for PBXProject "MyCycriptServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDA480022B2426000472EA0 /* Release */,
+				1DDA480122B2426000472EA0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DDA480222B2426000472EA0 /* Build configuration list for PBXNativeTarget "MyCycriptServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDA480322B2426000472EA0 /* Release */,
+				1DDA480422B2426000472EA0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DDA47E022B2426000472EA0 /* Project object */;
+}
