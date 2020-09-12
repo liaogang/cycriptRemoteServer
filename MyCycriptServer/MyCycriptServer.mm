@@ -1,22 +1,16 @@
-#line 1 "/Users/dafu/liaogang/MyCycriptServer/MyCycriptServer/MyCycriptServer.xm"
+#line 1 "/Users/minisj.net/MyCycriptServer/MyCycriptServer/MyCycriptServer.xm"
 #import "MDCycriptManager.h"
 #import "Cycript.h"
 #import <UIKit/UIKit.h>
 
 static __attribute__((constructor)) void _logosLocalCtor_2eadeef6(int __unused argc, char __unused **argv, char __unused **envp){
 	
-	NSLog(@"Cycript server ");
 
-	    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-
-		
-
-        int base = 8011;
-        base += rand()%400;
+	[[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
-        NSLog(@"Cycript server to start ..: %u", base);
-            
-        CYListenServer(base);
+        NSLog(@"\n\n----cycript server started at port 6666----\n\n");
+        
+        CYListenServer(6666);
 
         MDCycriptManager* manager = [MDCycriptManager sharedInstance];
         [manager loadCycript:NO];

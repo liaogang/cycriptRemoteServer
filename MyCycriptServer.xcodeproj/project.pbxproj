@@ -32,7 +32,7 @@
 		1DDA47F122B2426000472EA0 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
 		1DDA47F622B2426000472EA0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		1DDA47F822B2426000472EA0 /* MyCycriptServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCycriptServer-Prefix.pch"; sourceTree = "<group>"; };
-		1DDA47F922B2426000472EA0 /* MyCycriptServer.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyCycriptServer.xm; sourceTree = "<group>"; };
+		1DDA47F922B2426000472EA0 /* MyCycriptServer.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = MyCycriptServer.xm; sourceTree = "<group>"; };
 		1DDA47FA22B2426000472EA0 /* MyCycriptServer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCycriptServer.mm; sourceTree = "<group>"; };
 		1DDA47FF22B2426000472EA0 /* MyCycriptServer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MyCycriptServer.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MyCycriptServer.plist; sourceTree = "<group>"; };
 		1DDA480522B2427C00472EA0 /* MDCycriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -296,6 +296,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -330,6 +331,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};

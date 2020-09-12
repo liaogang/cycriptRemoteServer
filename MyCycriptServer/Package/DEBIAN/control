@@ -1,4 +1,4 @@
-Package: tools.cycript.server
+Package: gz.tools.cycript.server
 Name: MyCycriptServer
 Version: 0.1-1
 Description: 
